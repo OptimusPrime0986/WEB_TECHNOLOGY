@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f8fafc 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bill-card {
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #0d6efd, #3b82f6);
+    color: white;
+}
+
+.card-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+}
+
+.form-control,
+.btn {
+    border-radius: 12px;
+}
+
+.result-box {
+    background: #f8f9ff;
+    border: 1px solid #dfe7ff;
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.summary-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.08);
+}
+
+.summary-item .label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.summary-item strong {
+    font-size: 1.5rem;
+    color: #0f172a;
+}
+
+.rate-table {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem !important;
+    }
+
+    .summary-item strong {
+        font-size: 1.2rem;
+    }
+}
