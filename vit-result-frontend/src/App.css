@@ -1,0 +1,151 @@
+.app {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.header {
+  background: linear-gradient(135deg, #512da8, #673ab7);
+  color: white;
+  padding: 25px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 5px 0 0;
+  opacity: 0.9;
+}
+
+.vit-logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: white;
+  color: #512da8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 18px 20px;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: #512da8;
+  border-color: #512da8;
+}
+
+.btn-primary:hover {
+  background: #4527a0;
+  border-color: #4527a0;
+}
+
+.result-header {
+  background: #512da8;
+  color: white;
+}
+
+.student-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: #f8f9fa;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.grade-badge {
+  display: inline-block;
+  background: #e8eaf6;
+  color: #512da8;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.sgpa-box {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #512da8, #673ab7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sgpa-box span {
+  font-size: 18px;
+}
+
+.sgpa-box strong {
+  font-size: 32px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+
+  .header-content {
+    gap: 15px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .vit-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+  }
+
+  .student-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .sgpa-box {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
