@@ -407,7 +407,7 @@ function App() {
         <header className="top-strip panel">
           <div>
             <p className="eyebrow">SYSTEM STATUS</p>
-            <h2>Global Time Hub</h2>
+            <h2>Global Time Hub (Utkarsh_Meshram) </h2>
           </div>
           <div className="live-indicator">
             <span className="live-dot" />

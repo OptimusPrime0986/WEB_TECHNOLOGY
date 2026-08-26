@@ -1,0 +1,53 @@
+:root {
+    --ink: #17252f;
+    --muted: #6a7b83;
+    --paper: #f7f7f2;
+    --panel: #ffffff;
+    --line: #dfe6e3;
+    --teal: #0a817c;
+    --teal-dark: #076762;
+    --orange: #ee6c38;
+    --yellow: #f4c95d;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: 'DM Sans', sans-serif; }
+.page-shell { min-height: 100vh; overflow: hidden; background: radial-gradient(circle at 84% 12%, rgba(244, 201, 93, .18), transparent 23rem), var(--paper); }
+.topbar { height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(23, 37, 47, .1); }
+.brand { display: inline-flex; gap: 11px; align-items: center; color: var(--ink); font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700; text-decoration: none; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; color: white; background: var(--teal); font-size: .92rem; }
+.topbar-note { color: var(--muted); font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; }
+.content-grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(340px, .8fr); gap: clamp(3rem, 9vw, 9rem); align-items: center; padding-top: clamp(4.5rem, 10vw, 8rem); padding-bottom: 5rem; }
+.eyebrow, .panel-kicker, .result-label { color: var(--teal); font-size: .7rem; font-weight: 700; letter-spacing: .14em; }
+.eyebrow { display: flex; align-items: center; gap: 8px; margin-bottom: 1.5rem; }
+.live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--orange); }
+h1, h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+h1 { max-width: 620px; margin: 0; font-size: clamp(3.3rem, 6.2vw, 6rem); line-height: .98; letter-spacing: -.03em; }
+h1 em { color: var(--orange); font-style: normal; }
+.intro-text { max-width: 410px; margin: 1.8rem 0 2.8rem; color: var(--muted); font-size: 1.08rem; line-height: 1.65; }
+.tariff-list { max-width: 440px; border-top: 1px solid var(--line); }
+.tariff-row { display: flex; justify-content: space-between; gap: 1rem; padding: .83rem 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
+.tariff-row strong { color: var(--teal-dark); font-weight: 700; }
+.tariff-row small { color: var(--muted); font-size: .7rem; font-weight: 500; }
+.calculator-panel { position: relative; padding: clamp(1.6rem, 4vw, 2.5rem); border: 1px solid rgba(23, 37, 47, .09); border-radius: 8px; background: var(--panel); box-shadow: 0 22px 60px rgba(23, 37, 47, .1); }
+.panel-heading { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2.4rem; }
+.panel-kicker { margin: 0 0 .65rem; color: var(--orange); }
+h2 { margin: 0; font-size: 1.65rem; }
+.bolt-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; color: var(--ink); background: var(--yellow); font-size: 1.55rem; }
+.form-label { margin-bottom: .65rem; font-size: .9rem; font-weight: 600; }
+.input-wrap { display: flex; align-items: center; border-bottom: 2px solid var(--ink); }
+.input-wrap input { width: 100%; padding: .2rem 0 .6rem; border: 0; outline: 0; color: var(--ink); background: transparent; font-family: 'Space Grotesk', sans-serif; font-size: 2.9rem; font-weight: 600; }
+.input-wrap input::placeholder { color: #b7c2c1; }
+.input-wrap span { padding-top: .7rem; color: var(--muted); font-size: .7rem; font-weight: 700; letter-spacing: .12em; }
+.form-text { margin-top: .7rem; color: var(--muted); font-size: .78rem; }
+.alert { padding: .65rem .8rem; border: 0; border-left: 3px solid #c83b35; border-radius: 0; font-size: .8rem; }
+.calculate-button { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: 2rem; padding: 1rem 1.15rem; border: 0; border-radius: 5px; color: #fff; background: var(--teal); font-size: .92rem; font-weight: 700; transition: background .2s, transform .2s; }
+.calculate-button:hover { background: var(--teal-dark); transform: translateY(-2px); }
+.calculate-button span { font-size: 1.25rem; }
+.result-block { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.result-label { margin-bottom: .4rem; color: var(--muted); }
+.result-amount { color: var(--teal-dark); font-family: 'Space Grotesk', sans-serif; font-size: 2.65rem; font-weight: 700; }
+.result-meta { margin-top: .35rem; color: var(--muted); font-size: .8rem; }
+.check-icon { display: inline-grid; place-items: center; width: 18px; height: 18px; margin-right: 5px; border-radius: 50%; color: white; background: var(--teal); font-size: .7rem; }
+.footer-note { display: flex; justify-content: space-between; padding: 1.5rem 0; border-top: 1px solid rgba(23, 37, 47, .1); color: var(--muted); font-size: .72rem; }
+@media (max-width: 767px) { .topbar { height: 72px; padding-inline: 1.25rem !important; } .topbar-note { display: none; } .content-grid { display: block; padding: 3.5rem 1.25rem 3rem; } h1 { font-size: clamp(3rem, 15vw, 4.5rem); } .intro-text { margin: 1.5rem 0 2.1rem; } .tariff-list { margin-bottom: 3rem; } .calculator-panel { padding: 1.4rem; } .footer-note { margin-inline: 1.25rem; gap: 1rem; flex-direction: column; } }
